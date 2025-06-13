@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.container_ {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav_img img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navbar_1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navbar_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navbar_2 a {
+  text-decoration: none;
+  background-color: #181818;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06cm;
+  border: 1px solid #1a1a1a;
+  color: #fff;
+}
+
+.navbar_2 a:hover {
+  background-color: #fff;
+  color: #181818;
+}
+
+td,
+tr,
+th {
+  text-align: justify;
+  border: 1px solid black;
+  column-fill: balance;
+}
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 0 20px;
+}
+
+td {
+  /* padding: 5px; */
+  padding: 20px 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+form {
+  width: 400px;
+  margin: 100px 0;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+form input {
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name,
+.age,
+.gender,
+.food,
+.cook,
+.textarea {
+  padding: 20px 30px;
+}
+
+.name,
+.age,
+.food {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ol li {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.card_animation h2 {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease;
+
+  position: absolute;
+  z-index: 10;
+
+  /* transition: all 5s ease-in-out; */
+  animation: 2s spin ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotatex(180deg);
+
+    border: 2px solid red;
+  }
+  33% {
+    transform: rotatey(180deg);
+    transform: rotatey(180deg);
+    border: 2px solid rgb(106, 255, 0);
+  }
+  66% {
+    transform: rotatez(180deg);
+  }
+  100% {
+    transform: rotateX("180deg") rotateY("180deg") rotateZ("180deg");
+  }
+}
+
+.card_hover:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.login_button input {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.nth_child :nth-child(3) {
+  color: yellow;
+}
+
+.nth_child :nth-child(6) {
+  color: red;
+}
